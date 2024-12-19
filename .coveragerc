@@ -1,8 +1,7 @@
 [run]
 branch=True
-command_line= -m pytest -o "testpaths=tests" --cov=SNN2/ --cov-report term-missing
+command_line= -m pytest -o "testpaths=tests" --cov=tf_cure/ --cov-report term-missing
 omit =
-		plotter/**/*
 		build/*
 		dist/*
 		plotter.egg-info/*
@@ -12,11 +11,11 @@ omit =
 		.pytest_cache/*
 		**/__init__.py
 source=
-        plotter/src/
+        	tf_cure/src/
 
 [tool:pytest]
 testpaths = tests
-addopts = --cov=plotter/ --cov-report term-missing --rng-salt "v0.1.0"
+addopts = --cov=tf_cure/ --cov-report term-missing --rng-salt "v0.1.0"
 
 [report]
 show_missing=True

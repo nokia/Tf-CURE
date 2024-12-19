@@ -9,7 +9,7 @@ clean:
 		find . -name '*.py[co]' -delete
 
 virtualenv:
-		virtualenv --python=/usr/bin/python3.11 --prompt="|> SeaCoral <|" env
+		virtualenv --python=/usr/bin/python3.11 --prompt="|> tf_cure <|" env
 		env/bin/pip install --upgrade pip
 		grep -v '^\-e' requirements.txt | cut -d = -f 1 | xargs -n1 env/bin/pip3 install -U
 		#pip3 freeze | sed -ne 's/==.*//p' | xargs env/bin/pip3 install -U
