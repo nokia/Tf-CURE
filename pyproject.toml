@@ -48,4 +48,4 @@ setup = [
 ]
 
 [project.scripts]
-plt = "tf_cure.main:main"
+tf_cure = "tf_cure.main:main"
