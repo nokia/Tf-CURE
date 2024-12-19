@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeaCoral framework documentation! &mdash; SeaCoral 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=d45e8c67"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="Installing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            SeaCoral
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Installing.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CLIusage.html">CLI Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APIusage.html">API Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Customization.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples package</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dataset</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Dataset.html">Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DatasetOperations.html">Dataset Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DatasetForking.html">Dataset Forking</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Plot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Plot.html">Plot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PlotLevelCustomization.html">Plot level customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FigureLevelCustomization.html">Figure level customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UserDefinedFunctions.html">User Defined Plot Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DevelopmentGuidelines.html">Development Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">seacoral</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">SeaCoral</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SeaCoral framework documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="seacoral-framework-documentation">
+<h1>SeaCoral framework documentation!<a class="headerlink" href="#seacoral-framework-documentation" title="Link to this heading"></a></h1>
+<p>This framweork can be used to plot datasets in pythong without repeating
+the same code over and over again.
+The framework is based on <a class="reference external" href="https://seaborn.pydata.org/">Seaborn</a> and <a class="reference external" href="https://matplotlib.org/">Matplotlib</a> library and is designed to be
+flexible and easy to use.
+The plots can be easily tuned to more spohisitcated with custom setups if
+necessary.
+The main usage of this library is for scientific pubblications where given
+the same data sometimes you just wanted to move the legend or change the
+font without having to look into the codebase or hack the plot.</p>
+<section id="using-this-framework">
+<h2>Using this framework<a class="headerlink" href="#using-this-framework" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="Installing.html"><span class="doc">Installation</span></a></dt><dd><p>How to install this tool in your machine.</p>
+</dd>
+<dt><a class="reference internal" href="CLIusage.html"><span class="doc">CLI Usage</span></a></dt><dd><p>How to use this tool from the CLI without need to write code.</p>
+</dd>
+<dt><a class="reference internal" href="APIusage.html"><span class="doc">API Usage</span></a></dt><dd><p>How to include this library into your code for easy plotting.</p>
+</dd>
+<dt><a class="reference internal" href="Customization.html"><span class="doc">Customization</span></a></dt><dd><p>How to include new functions into the framework to personalize your plots.</p>
+</dd>
+<dt><a class="reference internal" href="Features.html"><span class="doc">Features</span></a></dt><dd><p>List of supported features and how to use them.</p>
+</dd>
+<dt><a class="reference internal" href="Examples.html"><span class="doc">Examples package</span></a></dt><dd><p>A broader list of examples of how to use the framework.</p>
+</dd>
+</dl>
+</section>
+<section id="dataset-manipulation">
+<h2>Dataset Manipulation<a class="headerlink" href="#dataset-manipulation" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="Dataset.html"><span class="doc">Dataset</span></a></dt><dd><p>How to datasets are loaded into the framwork</p>
+</dd>
+<dt><a class="reference internal" href="DatasetOperations.html"><span class="doc">Dataset Operations</span></a></dt><dd><p>How to manipulate the datasets</p>
+</dd>
+<dt><a class="reference internal" href="DatasetForking.html"><span class="doc">Dataset Forking</span></a></dt><dd><p>How to copy and modify an already loaded dataset</p>
+</dd>
+</dl>
+</section>
+<section id="plot-generation">
+<h2>Plot Generation<a class="headerlink" href="#plot-generation" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="Plot.html"><span class="doc">Plot</span></a></dt><dd><p>How to generate simple plots</p>
+</dd>
+<dt><a class="reference internal" href="PlotLevelCustomization.html"><span class="doc">Plot level customization</span></a></dt><dd><p>Available customization options that applies to all generated plots</p>
+</dd>
+<dt><a class="reference internal" href="FigureLevelCustomization.html"><span class="doc">Figure level customization</span></a></dt><dd><p>Available customization options applicable to plots individually</p>
+</dd>
+<dt><a class="reference internal" href="UserDefinedFunctions.html"><span class="doc">User Defined Plot Functions</span></a></dt><dd><p>How to include new functions into the framework to personalize your plots.</p>
+</dd>
+</dl>
+</section>
+<section id="development">
+<h2>Development<a class="headerlink" href="#development" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt><a class="reference internal" href="Contributing.html"><span class="doc">Contributing</span></a></dt><dd><p>How to contribute changes to the framework.</p>
+</dd>
+<dt><a class="reference internal" href="DevelopmentGuidelines.html"><span class="doc">Development Guidelines</span></a></dt><dd><p>Guidelines the theme developers use for developing and testing changes.</p>
+</dd>
+<dt><a class="reference internal" href="Changelog.html"><span class="doc">Change Log</span></a></dt><dd><p>The framework development changelog.</p>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Installing.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Mattia Milani.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
