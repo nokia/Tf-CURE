@@ -1,0 +1,51 @@
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2024 Mattia Milani <mattia.milani@nokia.com>
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tf_cure"
+version = "0.1.0"
+authors = [
+  { name="Mattia Milani", email="mattia.milani@nokia.com" },
+]
+maintainers = [
+  {name = "Mattia Milani", email = "mattia.milani@nokia.com"}
+]
+description = "A Python package to execute the CURE algorithm on tensorflow"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages]
+find = {exclude = ["tf_cure.tests*", "ez_setup"]}
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock"
+]
+setup = [
+    "pytest-runner"
+]
+
+[project.scripts]
+plt = "tf_cure.main:main"

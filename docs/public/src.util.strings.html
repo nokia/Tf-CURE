@@ -1,0 +1,489 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src.util.strings module &mdash; SeaCoral 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=d45e8c67"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="src.data_manager module" href="src.data_manager.html" />
+    <link rel="prev" title="src.util.helper module" href="src.util.helper.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            SeaCoral
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Installing.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CLIusage.html">CLI Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APIusage.html">API Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Customization.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples package</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dataset</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Dataset.html">Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DatasetOperations.html">Dataset Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DatasetForking.html">Dataset Forking</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Plot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Plot.html">Plot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PlotLevelCustomization.html">Plot level customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FigureLevelCustomization.html">Figure level customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UserDefinedFunctions.html">User Defined Plot Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DevelopmentGuidelines.html">Development Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Change Log</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">seacoral</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Examples.html">Examples package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pylint_plugins.html">pylint_plugins package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="src.html">src package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="src.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="src.context_managers.html">src.context_managers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.data_loader.html">src.data_loader package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.data_operations.html">src.data_operations package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.decorators.html">src.decorators package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.environment.html">src.environment package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.io.html">src.io package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.log.html">src.log package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.params.html">src.params package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.plot.html">src.plot package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="src.util.html">src.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="src.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="src.html#module-src">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SeaCoral</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">seacoral</a></li>
+          <li class="breadcrumb-item"><a href="src.html">src package</a></li>
+          <li class="breadcrumb-item"><a href="src.util.html">src.util package</a></li>
+      <li class="breadcrumb-item active">src.util.strings module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/src.util.strings.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-src.util.strings">
+<span id="src-util-strings-module"></span><h1>src.util.strings module<a class="headerlink" href="#module-src.util.strings" title="Link to this heading"></a></h1>
+<section id="strings-module">
+<h2>strings module<a class="headerlink" href="#strings-module" title="Link to this heading"></a></h2>
+<p>Module used to control in one place all the strings of the program</p>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.util.strings.s">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.util.strings.</span></span><span class="sig-name descname"><span class="pre">s</span></span><a class="headerlink" href="#src.util.strings.s" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<ol class="loweralpha simple" start="19">
+<li></li>
+</ol>
+<p>Class used to manage strings in the program</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.all_dst_origin">
+<span class="sig-name descname"><span class="pre">all_dst_origin</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['Copy',</span> <span class="pre">'Dependent',</span> <span class="pre">'Local',</span> <span class="pre">'TfPkl',</span> <span class="pre">'TfPklList',</span> <span class="pre">'TfPklListIterator',</span> <span class="pre">'Online',</span> <span class="pre">'ObjPklList']</span></em><a class="headerlink" href="#src.util.strings.s.all_dst_origin" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.appendix_key">
+<span class="sig-name descname"><span class="pre">appendix_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'appendix'</span></em><a class="headerlink" href="#src.util.strings.s.appendix_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.csv_help">
+<span class="sig-name descname"><span class="pre">csv_help</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Flag</span> <span class="pre">to</span> <span class="pre">activate</span> <span class="pre">the</span> <span class="pre">csv</span> <span class="pre">output</span> <span class="pre">style'</span></em><a class="headerlink" href="#src.util.strings.s.csv_help" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.data_key">
+<span class="sig-name descname"><span class="pre">data_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'data'</span></em><a class="headerlink" href="#src.util.strings.s.data_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.data_operations_key">
+<span class="sig-name descname"><span class="pre">data_operations_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'operations'</span></em><a class="headerlink" href="#src.util.strings.s.data_operations_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.data_origin_key">
+<span class="sig-name descname"><span class="pre">data_origin_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'origin'</span></em><a class="headerlink" href="#src.util.strings.s.data_origin_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.dataset_obj_type">
+<span class="sig-name descname"><span class="pre">dataset_obj_type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dataset'</span></em><a class="headerlink" href="#src.util.strings.s.dataset_obj_type" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.dataset_obj_types">
+<span class="sig-name descname"><span class="pre">dataset_obj_types</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['dataset']</span></em><a class="headerlink" href="#src.util.strings.s.dataset_obj_types" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.default_conf">
+<span class="sig-name descname"><span class="pre">default_conf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'default_ini'</span></em><a class="headerlink" href="#src.util.strings.s.default_conf" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.dst_origin_depends_on">
+<span class="sig-name descname"><span class="pre">dst_origin_depends_on</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['Copy',</span> <span class="pre">'Dependent']</span></em><a class="headerlink" href="#src.util.strings.s.dst_origin_depends_on" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.env_par">
+<span class="sig-name descname"><span class="pre">env_par</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'environment'</span></em><a class="headerlink" href="#src.util.strings.s.env_par" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.env_rng">
+<span class="sig-name descname"><span class="pre">env_rng</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rng'</span></em><a class="headerlink" href="#src.util.strings.s.env_rng" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.env_tf_rng">
+<span class="sig-name descname"><span class="pre">env_tf_rng</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'tf_rng'</span></em><a class="headerlink" href="#src.util.strings.s.env_tf_rng" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.file_obj_types">
+<span class="sig-name descname"><span class="pre">file_obj_types</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['file']</span></em><a class="headerlink" href="#src.util.strings.s.file_obj_types" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.folder_obj_types">
+<span class="sig-name descname"><span class="pre">folder_obj_types</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['folder',</span> <span class="pre">'direcotry']</span></em><a class="headerlink" href="#src.util.strings.s.folder_obj_types" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.group_df_pkl">
+<span class="sig-name descname"><span class="pre">group_df_pkl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'groups_df'</span></em><a class="headerlink" href="#src.util.strings.s.group_df_pkl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.history_xlim">
+<span class="sig-name descname"><span class="pre">history_xlim</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'history_xlim'</span></em><a class="headerlink" href="#src.util.strings.s.history_xlim" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.history_ylim">
+<span class="sig-name descname"><span class="pre">history_ylim</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'history_ylim'</span></em><a class="headerlink" href="#src.util.strings.s.history_ylim" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.input_data">
+<span class="sig-name descname"><span class="pre">input_data</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'input_data'</span></em><a class="headerlink" href="#src.util.strings.s.input_data" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.io_exists_key">
+<span class="sig-name descname"><span class="pre">io_exists_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'exists'</span></em><a class="headerlink" href="#src.util.strings.s.io_exists_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.io_name_key">
+<span class="sig-name descname"><span class="pre">io_name_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'name'</span></em><a class="headerlink" href="#src.util.strings.s.io_name_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.io_path_key">
+<span class="sig-name descname"><span class="pre">io_path_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'path'</span></em><a class="headerlink" href="#src.util.strings.s.io_path_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.io_subtype_key">
+<span class="sig-name descname"><span class="pre">io_subtype_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'subtype'</span></em><a class="headerlink" href="#src.util.strings.s.io_subtype_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.io_type_key">
+<span class="sig-name descname"><span class="pre">io_type_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'type'</span></em><a class="headerlink" href="#src.util.strings.s.io_type_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.io_types">
+<span class="sig-name descname"><span class="pre">io_types</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['folder',</span> <span class="pre">'direcotry',</span> <span class="pre">'file']</span></em><a class="headerlink" href="#src.util.strings.s.io_types" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.last_layer_test">
+<span class="sig-name descname"><span class="pre">last_layer_test</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'tsne-resulting-df-{}'</span></em><a class="headerlink" href="#src.util.strings.s.last_layer_test" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.log_file">
+<span class="sig-name descname"><span class="pre">log_file</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'log_file'</span></em><a class="headerlink" href="#src.util.strings.s.log_file" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.log_format">
+<span class="sig-name descname"><span class="pre">log_format</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'%(asctime)s</span> <span class="pre">-</span> <span class="pre">%(levelname)s</span> <span class="pre">-</span> <span class="pre">%(message)s'</span></em><a class="headerlink" href="#src.util.strings.s.log_format" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.log_path">
+<span class="sig-name descname"><span class="pre">log_path</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'log_path'</span></em><a class="headerlink" href="#src.util.strings.s.log_path" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.network_plot_features">
+<span class="sig-name descname"><span class="pre">network_plot_features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'network_plot_features'</span></em><a class="headerlink" href="#src.util.strings.s.network_plot_features" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.numpy_rng">
+<span class="sig-name descname"><span class="pre">numpy_rng</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'numpy_rng'</span></em><a class="headerlink" href="#src.util.strings.s.numpy_rng" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_action_args">
+<span class="sig-name descname"><span class="pre">param_action_args</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'args'</span></em><a class="headerlink" href="#src.util.strings.s.param_action_args" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_action_kwargs">
+<span class="sig-name descname"><span class="pre">param_action_kwargs</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'kwargs'</span></em><a class="headerlink" href="#src.util.strings.s.param_action_kwargs" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_args_ast">
+<span class="sig-name descname"><span class="pre">param_args_ast</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['operation',</span> <span class="pre">'dataset']</span></em><a class="headerlink" href="#src.util.strings.s.param_args_ast" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_dataset_type">
+<span class="sig-name descname"><span class="pre">param_dataset_type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dataset'</span></em><a class="headerlink" href="#src.util.strings.s.param_dataset_type" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_depends_on_key">
+<span class="sig-name descname"><span class="pre">param_depends_on_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'depends_on'</span></em><a class="headerlink" href="#src.util.strings.s.param_depends_on_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_generic_type">
+<span class="sig-name descname"><span class="pre">param_generic_type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'generic'</span></em><a class="headerlink" href="#src.util.strings.s.param_generic_type" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_op_type">
+<span class="sig-name descname"><span class="pre">param_op_type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'operation'</span></em><a class="headerlink" href="#src.util.strings.s.param_op_type" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_plot_type">
+<span class="sig-name descname"><span class="pre">param_plot_type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'plot'</span></em><a class="headerlink" href="#src.util.strings.s.param_plot_type" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_types">
+<span class="sig-name descname"><span class="pre">param_types</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['generic',</span> <span class="pre">'operation',</span> <span class="pre">'dataset']</span></em><a class="headerlink" href="#src.util.strings.s.param_types" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.param_value">
+<span class="sig-name descname"><span class="pre">param_value</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'value'</span></em><a class="headerlink" href="#src.util.strings.s.param_value" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.pkl_path">
+<span class="sig-name descname"><span class="pre">pkl_path</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'pkl_path'</span></em><a class="headerlink" href="#src.util.strings.s.pkl_path" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_dataset_keywords_col_id">
+<span class="sig-name descname"><span class="pre">plot_dataset_keywords_col_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'col_id'</span></em><a class="headerlink" href="#src.util.strings.s.plot_dataset_keywords_col_id" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_dataset_keywords_key">
+<span class="sig-name descname"><span class="pre">plot_dataset_keywords_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dataset_keywords'</span></em><a class="headerlink" href="#src.util.strings.s.plot_dataset_keywords_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_dataset_keywords_values">
+<span class="sig-name descname"><span class="pre">plot_dataset_keywords_values</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'value'</span></em><a class="headerlink" href="#src.util.strings.s.plot_dataset_keywords_values" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_dataset_merge_axis_key">
+<span class="sig-name descname"><span class="pre">plot_dataset_merge_axis_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'merge_axis'</span></em><a class="headerlink" href="#src.util.strings.s.plot_dataset_merge_axis_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_datasets_key">
+<span class="sig-name descname"><span class="pre">plot_datasets_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dataset'</span></em><a class="headerlink" href="#src.util.strings.s.plot_datasets_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_extensions_key">
+<span class="sig-name descname"><span class="pre">plot_extensions_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'extension'</span></em><a class="headerlink" href="#src.util.strings.s.plot_extensions_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_features">
+<span class="sig-name descname"><span class="pre">plot_features</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'plot_features'</span></em><a class="headerlink" href="#src.util.strings.s.plot_features" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_format">
+<span class="sig-name descname"><span class="pre">plot_format</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'plot_format'</span></em><a class="headerlink" href="#src.util.strings.s.plot_format" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_key">
+<span class="sig-name descname"><span class="pre">plot_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'plot_conf'</span></em><a class="headerlink" href="#src.util.strings.s.plot_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_legend_key">
+<span class="sig-name descname"><span class="pre">plot_legend_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'legend_flag'</span></em><a class="headerlink" href="#src.util.strings.s.plot_legend_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_output_name_key">
+<span class="sig-name descname"><span class="pre">plot_output_name_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'output_name'</span></em><a class="headerlink" href="#src.util.strings.s.plot_output_name_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_palette_key">
+<span class="sig-name descname"><span class="pre">plot_palette_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'palette'</span></em><a class="headerlink" href="#src.util.strings.s.plot_palette_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_regenerate_key">
+<span class="sig-name descname"><span class="pre">plot_regenerate_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'regenerate'</span></em><a class="headerlink" href="#src.util.strings.s.plot_regenerate_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_set_kwargs_key">
+<span class="sig-name descname"><span class="pre">plot_set_kwargs_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'set_kwargs'</span></em><a class="headerlink" href="#src.util.strings.s.plot_set_kwargs_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_set_legend_key">
+<span class="sig-name descname"><span class="pre">plot_set_legend_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'set_legend'</span></em><a class="headerlink" href="#src.util.strings.s.plot_set_legend_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_set_special_key">
+<span class="sig-name descname"><span class="pre">plot_set_special_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'set_special'</span></em><a class="headerlink" href="#src.util.strings.s.plot_set_special_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.plot_special_legend_key">
+<span class="sig-name descname"><span class="pre">plot_special_legend_key</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'special_legend'</span></em><a class="headerlink" href="#src.util.strings.s.plot_special_legend_key" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.results_path">
+<span class="sig-name descname"><span class="pre">results_path</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'output_path'</span></em><a class="headerlink" href="#src.util.strings.s.results_path" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.silent_help">
+<span class="sig-name descname"><span class="pre">silent_help</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Flag</span> <span class="pre">to</span> <span class="pre">deactivate</span> <span class="pre">the</span> <span class="pre">output</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">STDOUT'</span></em><a class="headerlink" href="#src.util.strings.s.silent_help" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.sub_obj_type">
+<span class="sig-name descname"><span class="pre">sub_obj_type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['input_data']</span></em><a class="headerlink" href="#src.util.strings.s.sub_obj_type" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.util.strings.s.verbose_help">
+<span class="sig-name descname"><span class="pre">verbose_help</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Define</span> <span class="pre">the</span> <span class="pre">level</span> <span class="pre">of</span> <span class="pre">verbosity</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">logs'</span></em><a class="headerlink" href="#src.util.strings.s.verbose_help" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="src.util.helper.html" class="btn btn-neutral float-left" title="src.util.helper module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="src.data_manager.html" class="btn btn-neutral float-right" title="src.data_manager module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Mattia Milani.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
