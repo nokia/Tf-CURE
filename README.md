@@ -1,7 +1,4 @@
-# SeaCoral
+# TF-Cure
 
-CLI tool to generate plots from configuration files.
-Python3.11 library to generate plots easily.
-
-Do not change the code, copy and change the configuration file.
+Apply the CURE algorithm to an input dataset of points in n-dimensions using Tensorflow as backend.
 
