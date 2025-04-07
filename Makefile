@@ -14,7 +14,7 @@ virtualenv:
 		grep -v '^\-e' requirements.txt | cut -d = -f 1 | xargs -n1 env/bin/pip3 install -U
 		#pip3 freeze | sed -ne 's/==.*//p' | xargs env/bin/pip3 install -U
 		@echo
-		@echo "Virtualenv created, use 'source src/env/bin/activate' to use it"
+		@echo "Virtualenv created, use 'source env/bin/activate' to use it"
 		@echo
 
 install:
