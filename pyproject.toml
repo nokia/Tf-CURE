@@ -19,7 +19,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tf_cure"
-version = "0.2.0"
+version = "2.0.0"
 authors = [
   { name="Mattia Milani", email="mattia.milani@nokia.com" },
 ]
