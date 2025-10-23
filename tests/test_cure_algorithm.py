@@ -16,13 +16,11 @@ import numpy as np
 import tensorflow as tf
 import pytest
 
-from pyclustering.cluster import cluster_visualizer;
 from pyclustering.cluster.cure import cure;
 from pyclustering.utils import read_sample;
 from pyclustering.samples.definitions import FCPS_SAMPLES;
 
-from tf_cure.src.CURELayer.tf_CURE import TfCURE
-from tf_cure.src.CURELayer.tf_cluster import TfCluster
+from tf_cure.src.cure import TfCURE
 from tf_cure.src import TfCURE
 
 class TestTfCURE():
@@ -54,5 +52,3 @@ class TestTfCURE():
         assert pyclst_rep.shape == tf_reps.shape
         # Assert that all elements from pyclst_rep are in tf_reps independently from the order
         assert all([any([np.allclose(x, y) for y in tf_reps]) for x in pyclst_rep])
-        assert False
-
